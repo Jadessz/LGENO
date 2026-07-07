@@ -1,0 +1,44 @@
+{
+  "name": "lgeno",
+  "private": true,
+  "version": "0.1.0",
+  "author": "Jadessz",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jadessz/LGENO.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "tsx --env-file=.env.local scripts/dev-api.ts",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "search": "tsx --env-file=.env.local scripts/run-search.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.110.0",
+    "@tanstack/react-table": "^8.21.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.23.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.2",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vercel/node": "^5.8.22",
+    "@vitejs/plugin-react": "^6.0.3",
+    "dotenv": "^17.4.2",
+    "oxlint": "^1.71.0",
+    "tailwindcss": "^4.3.2",
+    "tsx": "^4.23.0",
+    "typescript": "~5.8.3",
+    "vite": "^8.1.1"
+  }
+}

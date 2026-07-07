@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" }
+  ],
+  "functions": {
+    "api/search.ts": {
+      "maxDuration": 60
+    },
+    "api/cron/run.ts": {
+      "maxDuration": 300
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/cron/run",
+      "schedule": "0 9 * * 1"
+    }
+  ]
+}
